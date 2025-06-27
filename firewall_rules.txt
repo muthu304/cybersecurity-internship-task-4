@@ -1,0 +1,33 @@
+
+┌──(muthuguru㉿kali)-[~]
+└─$ sudo ufw enable        
+Firewall is active and enabled on system startup
+                                                                                
+┌──(muthuguru㉿kali)-[~]
+└─$ sudo ufw allow 22
+Rule added
+Rule added (v6)
+                                                                                
+┌──(muthuguru㉿kali)-[~]
+└─$ sudo ufw deny 23 
+Rule added
+Rule added (v6)
+                                                                                
+┌──(muthuguru㉿kali)-[~]
+└─$ sudo ufw status numbered
+Status: active
+
+     To                         Action      From
+     --                         ------      ----
+[ 1] 22                         ALLOW IN    Anywhere                  
+[ 2] 23                         DENY IN     Anywhere                  
+[ 3] 22 (v6)                    ALLOW IN    Anywhere (v6)             
+[ 4] 23 (v6)                    DENY IN     Anywhere (v6)             
+
+                                                                                
+┌──(muthuguru㉿kali)-[~]
+└─$ sudo ufw delete deny 23 
+Rule deleted
+Rule deleted (v6)
+                                                                                
+┌──(muthuguru㉿kali)-[~]
